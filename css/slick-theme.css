@@ -1,0 +1,140 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('../img/icons/ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/slick.eot');
+    src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/slick.woff') format('woff'),
+    url('../fonts/slick.ttf') format('truetype'),
+    url('../fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    opacity: 1;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    opacity: .9;
+    outline: none;
+}
+
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled
+{
+    opacity: .75;
+}
+
+.slick-prev
+{
+    left: -101px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -101px;
+    left: auto;
+}
+.slick-next
+{
+    right: -101px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -101px;
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -30px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    padding: 0;
+
+    cursor: pointer;
+    color: transparent;
+}
+.slick-dots li button
+{
+    display: block;
+
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+
+    opacity: 1;
+    background: #fff;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+
+.slick-dots li.slick-active button
+{
+    opacity: .55;
+    color: transparent;
+}
